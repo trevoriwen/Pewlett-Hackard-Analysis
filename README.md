@@ -20,6 +20,7 @@ point 4
 ## Summary of Pewlett-Hackard Analysis
 
 **Upcoming Silver Tsunami**
+
 There will be 133,776 total roles that will need to be filled with the upcoming silver tsunami.
 
 There are enough retirement-ready employees in each department to mentor the group of mentorship eligible employees in those departments as seen in the below table. In theory this group would be responsible for helping train the new employees that will replace the retiring employees which would be about 21 newly hired employees per the employees in the mentorship eligible list.
@@ -27,4 +28,5 @@ There are enough retirement-ready employees in each department to mentor the gro
 (department_count TABLE)
 
 **Additional Analysis Recommendations**
+
 As for additional data, I would recommend getting to dive deeper into Hewlett-Packard’s Silver Tsunami counts for by department and title for the mentorship eligible employees to see if there are any gaps between those retiring and those entering the mentorship program. I would add this column to the retirement_by_department and retiring_titles tables to get side by side counts for each group by title and department. Another piece of additional data I would look into is increasing the amount of employees that would be eligible for the mentorship. We looked at people that had a birth year of 1965 but we could also add people that have been newly hired as well with hire_date. Right now the mentor group is 4.9% of the retirement-ready group. The last additional data I might look at which remaining employees are the most senior in their position and/or department as they would likely be eligible to replace the senior positions left open by the retiring group.
