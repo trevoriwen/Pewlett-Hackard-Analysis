@@ -9,24 +9,28 @@ Pewlett-Hackard is faced with a large number of their employees looking closer t
 
 This data was extracted by joining the employee and titles tables using the employee number (emp_no) and filtering the data to those employees that were born between 1952 and 1955. From this data we originally see that there are 133,776 rows but can also see that there are duplicates of employees and employees that are no longer at the company. Having Pewlett-Hackard use this number before additional filtering would strongly skew the estimate of retirement-ready employees.
 
+![Retirement Titles Code](Queries/Resources/retirement_titles_code.PNG)
 ![Retirement Titles Table](Queries/Resources/retirement_titles.PNG)
 
 **Filtering down the retirement-ready group of employees to only current employees and their most recent title.**
 
 To get an accurate number of retirement-ready employees for Pewlett-Hackard we will need to filter out all the employees that are no longer with the company making the to_date = 1999-01-01 as well as using the distinct on function to only get the current Pewlett-Hackard employees with their most recent title. Now with the unique titles table, we can see that there are only 72,458 retirement-ready employees, a number that is more palatable for the company.
 
+![Unique Titles Code](Queries/Resources/unique_titles_code.PNG)
 ![Unique Titles Table](Queries/Resources/unique_titles.PNG)
 
 **Counting the number of retirement-ready employees that make up each title.**
 
 Of the 72,458 positions opening due to future upcoming employee retirements there are only 7 different titles those employees make-up with the vast majority being Senior level Engineers and Staff. This could offer the opportunity that more entry and mid level Engineers and Staff are ready to move up which could ease training. This data was extracted by running a count of each title from the unique titles table.
 
+![Retiring Titles Code](Queries/Resources/retiring_titles_code.PNG)
 ![Retiring Titles Table](Queries/Resources/retiring_titles.PNG)
 
 **Gathering the list of employees eligible for the mentorship program.**
 
 We can see that there are 1,549 employees eligible for the mentorship program. We got this number by joining the department employee, employees, and titles tables and then filtering birth_date of 1965 and to_date of 1999-01-01. We also used the distinct on function to remove any duplicate employee names.
 
+![Mentorship Eligibility Code](Queries/Resources/mentorship_eligibility_code.PNG)
 ![Mentorship Eligibility Table](Queries/Resources/mentorship_eligibility.PNG)
 
 ## Summary of Pewlett-Hackard Analysis
